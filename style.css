@@ -6,3 +6,44 @@ Version: 0.1
 
 **/
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+header {
+	background-image: url(images/skyline.jpg);
+	background-size: cover;
+	height: 80vh;
+}
+
+.logo, h1, h2 {
+	color: #fff;
+	font-family: "Avenir Next";
+	font-weight: normal;
+}
+
+.logo {
+	position: absolute;
+  left: 80vh;
+  top: 20vh;
+}
+
+.script-logo {
+	font-size: 7em;
+	font-family: "Stackyard PERSONAL USE";
+}
+
+.national {
+	margin-bottom: 1em;
+}
+
+.association {
+	margin-top: 1em;
+}
+
+.association, .n-chapter {
+	text-align: right;
+}
