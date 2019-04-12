@@ -16,34 +16,119 @@ Version: 0.1
 header {
 	background-image: url(images/skyline.jpg);
 	background-size: cover;
-	height: 80vh;
+	height: 100vh;
 }
 
-.logo, h1, h2 {
-	color: #fff;
+h1, h2, h3, h4, h5, h6, p {
 	font-family: "Avenir Next";
 	font-weight: normal;
+}
+
+hr {
+	width: 100px;
+	margin-left: 60%;
+	height: 200px;
+	background-color:#fff;
+}
+
+.logo, .national, .association, .n-chapter {
+	color: #fff;
+}
+
+.national, .script-logo, 
+.association, .n-chapter {
+	text-shadow: 3px 3px 5px #5e5e5e;
 }
 
 .logo {
 	position: absolute;
   left: 80vh;
-  top: 20vh;
+  top: 25vh;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1249px) {
+	header {
+		background-position: center;
+		height: 60vh;
+	}
+
+	.logo {
+		left: 10vh;
+		top: 20vh;
+	}
+
+	.script-logo {
+		font-size: 13em;
+	}
+}
+
+@media only screen (min-width: 1250px) {
+	.logo {
+		left: 60vh;
+		top: 20vh;
+	}
 }
 
 .script-logo {
 	font-size: 7em;
 	font-family: "Stackyard PERSONAL USE";
-}
-
-.national {
-	margin-bottom: 1em;
-}
-
-.association {
-	margin-top: 1em;
+	font-weight: 100;
+	transform: rotate(-15deg);
 }
 
 .association, .n-chapter {
 	text-align: right;
+}
+
+.headings_cl {
+	margin-top: 0.5em;
+}
+
+.headings_std, .headings_cl {
+	font-family: "Stackyard PERSONAL USE";
+	text-align: center;
+	font-size: 4em;
+	font-weight: 100;
+}
+
+.intro {
+	margin-top: 4em;
+	margin-bottom: 8em;
+}
+
+.member-photo {
+	width: 450px;
+	height: 250px;
+}
+
+.blog {
+	margin-top: 4em;
+	margin-bottom: 8em;
+}
+
+.blog_section {
+	margin-top: 4em;
+}
+
+.bg_blue {
+	background-color: #5796E1;
+}
+
+.t_white {
+	color: #fff;
+}
+
+.el_left {
+	margin: 5em;
+}
+
+.el_right {
+	margin: 3em;
+	padding: 2em;
+}
+
+.lg_des {
+	font-weight: normal;
+	padding: 0em 2em;
+	line-height: 1.5;
 }
