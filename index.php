@@ -1,8 +1,8 @@
 <?php 
 
-get_header('front');
+	get_header('front');
 
-$blog_index = get_permalink( get_option( 'page_for_posts' ) ); 
+	$blog_index = get_permalink( get_option( 'page_for_posts' ) ); 
 
 ?>
 

@@ -1,10 +1,10 @@
-/**
+/**********
 
 Title: NSA Nashville
 Author: Rebecca Taylor
-Version: 0.1
+Version: 0.2
 
-**/
+**********/
 
 @font-face {
   font-family: Stackyard PERSONAL USE;  
@@ -23,28 +23,41 @@ body {
 	color: #3C3C3C;
 }
 
+.logo, .t_white, footer > *,
+.link_w, .link_w:hover, .rm,
+.btn_sng, .gen_header {
+	color: #fff;
+}
+
+.location, .bg_blue, .rm, 
+.btn_sng, .gen_header {
+	background-color: #5796E1;
+}
+
+.lg_des {
+	padding: 0em 2em;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+/**********
+
+Landing page styles
+
+**********/
+
 .front {
 	background-image: url(images/skyline.jpg);
 	background-size: cover;
 	height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	font-family: Lato;
-	font-weight: 300;
-}
-
 .logo {
-	color: #fff;
 	text-shadow: 3px 3px 5px #5e5e5e;
 	margin-top: 10em;
 }
 
-.national, .association, .nashville {
-	font-weight: normal;
-}
-
-.script-logo {
+.script_logo {
 	font-size: 7em;
 	font-family: "Stackyard PERSONAL USE";
 	transform: rotate(-15deg);
@@ -64,6 +77,8 @@ h1, h2, h3, h4, h5, h6, p {
 	font-size: 1.4em;
 }
 
+/* End top section */
+
 .headings {
 	font-family: "Stackyard PERSONAL USE";
 	text-align: center;
@@ -76,8 +91,11 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-bottom: 6em;
 }
 
-.member_photo {
+.member_photo, .location {
 	width: 100%;
+}
+
+.member_photo {
 	height: 250px;
 }
 
@@ -88,10 +106,7 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-top: 0.5em;
 }
 
-.location {
-	width: 100%;
-	background-color: #5796E1;
-}
+/* End welcome section */
 
 .blurb {
 	padding-top: 3em;
@@ -100,6 +115,8 @@ h1, h2, h3, h4, h5, h6, p {
 .blurb h5 {
 	font-size: 1.4em;
 }
+
+/* End location section */
 
 .excerpt_image {
 	width: 500px;
@@ -129,8 +146,9 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 2em;
 }
 
+/* End blog section */
+
 .bg_blue {
-	background-color: #5796E1;
 	padding-bottom: 0.5em;
 }
 
@@ -139,20 +157,6 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   bottom: 0;
   width: 100%;
-}
-
-.t_white {
-	color: #fff;
-}
-
-.blue_hr {
-	margin: auto;
-}
-
-.lg_des {
-	padding: 0em 2em;
-	line-height: 1.5;
-	text-align: justify;
 }
 
 .nsa_quote {
@@ -167,7 +171,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 footer > * {
- color: #fff;
  text-align: center;
 }
 
@@ -188,12 +191,7 @@ footer > * {
 	font-style: italic;
 }
 
-.link_w {
-	color: #fff;
-}
-
 .link_w:hover {
-	color: #fff;
 	text-decoration: none;
 }
 
@@ -211,15 +209,17 @@ a.link_b:hover {
 	padding-bottom: 0.5em;
 }
 
-/* Blog Index */
+/**********
+
+Blog Index
+
+**********/
 
 .recent_post {
 	margin-top: 2.5em;
 }
 
 .rm, .btn_sng {
-	background-color: #5796E1;
-	color: #fff;
 	padding: 0.4em;
 	margin: 0 auto;
   display: block;
@@ -233,16 +233,18 @@ a.link_b:hover {
 	text-transform: lowercase;
 }
 
-/* Single Blog Page */
+/**********
+
+Single Blog Page 
+
+**********/
 
 .gen_header {
 	text-align: center;
-	background-color: #5796E1;
-	color: #fff;
 	padding: 1.5em 0;
 }
 
-hr {
+.blue_hr {
 	margin: auto;
 }
 
