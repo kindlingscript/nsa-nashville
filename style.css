@@ -6,6 +6,12 @@ Version: 0.1
 
 **/
 
+@font-face {
+  font-family: Stackyard PERSONAL USE;  
+  src: url(fonts/stackyard_personal_use-webfont.woff);  
+  font-weight: normal;  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,122 +19,372 @@ Version: 0.1
   outline: 0;
 }
 
-header {
+body {
+	color: #3C3C3C;
+}
+
+.front {
 	background-image: url(images/skyline.jpg);
 	background-size: cover;
 	height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	font-family: "Avenir Next";
-	font-weight: normal;
-}
-
-hr {
-	width: 100px;
-	margin-left: 60%;
-	height: 200px;
-	background-color:#fff;
-}
-
-.logo, .national, .association, .n-chapter {
-	color: #fff;
-}
-
-.national, .script-logo, 
-.association, .n-chapter {
-	text-shadow: 3px 3px 5px #5e5e5e;
+	font-family: Lato;
+	font-weight: 300;
 }
 
 .logo {
-	position: absolute;
-  left: 80vh;
-  top: 25vh;
+	color: #fff;
+	text-shadow: 3px 3px 5px #5e5e5e;
+	margin-top: 10em;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1249px) {
-	header {
-		background-position: center;
-		height: 60vh;
-	}
-
-	.logo {
-		left: 10vh;
-		top: 20vh;
-	}
-
-	.script-logo {
-		font-size: 13em;
-	}
-}
-
-@media only screen (min-width: 1250px) {
-	.logo {
-		left: 60vh;
-		top: 20vh;
-	}
+.national, .association, .nashville {
+	font-weight: normal;
 }
 
 .script-logo {
 	font-size: 7em;
 	font-family: "Stackyard PERSONAL USE";
-	font-weight: 100;
 	transform: rotate(-15deg);
 }
 
-.association, .n-chapter {
+.divider_landing {
+	border-bottom: 1px solid #fff;
+	width: 20%;
+	margin: 1.5em 0 1.5em 65%;
+ }
+
+.association, .nashville {
 	text-align: right;
 }
 
-.headings_cl {
-	margin-top: 0.5em;
+.nashville {
+	font-size: 1.4em;
 }
 
-.headings_std, .headings_cl {
+.headings {
 	font-family: "Stackyard PERSONAL USE";
 	text-align: center;
 	font-size: 4em;
 	font-weight: 100;
 }
 
-.intro {
-	margin-top: 4em;
-	margin-bottom: 8em;
+.intro, .location, .blog {
+	padding-top: 6em;
+	padding-bottom: 6em;
 }
 
-.member-photo {
-	width: 450px;
+.member_photo {
+	width: 100%;
 	height: 250px;
 }
 
-.blog {
-	margin-top: 4em;
-	margin-bottom: 8em;
+.member_photo_des {
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+	padding-top: 0.5em;
+}
+
+.location {
+	width: 100%;
+	background-color: #5796E1;
+}
+
+.blurb {
+	padding-top: 3em;
+}
+
+.blurb h5 {
+	font-size: 1.4em;
+}
+
+.excerpt_image {
+	width: 500px;
+	height: 330px;
+}
+
+.blog_title {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.blog_title > a {
+	color: #3C3C3C;
+}
+
+.blog_excerpt {
+	margin-top: 1.5em;
 }
 
 .blog_section {
 	margin-top: 4em;
 }
 
+.recent_blog_excerpt .rm {
+	margin-top: 2em;
+}
+
 .bg_blue {
 	background-color: #5796E1;
+	padding-bottom: 0.5em;
+}
+
+.sticky {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .t_white {
 	color: #fff;
 }
 
-.el_left {
-	margin: 5em;
-}
-
-.el_right {
-	margin: 3em;
-	padding: 2em;
+.blue_hr {
+	margin: auto;
 }
 
 .lg_des {
-	font-weight: normal;
 	padding: 0em 2em;
 	line-height: 1.5;
+	text-align: justify;
+}
+
+.nsa_quote {
+	padding-top: 1em;
+	font-size: 2em;
+}
+
+.stackyard {
+	font-family: "Stackyard PERSONAL USE"; 
+	font-size: 2em;
+	padding-left: 0.2em;
+}
+
+footer > * {
+ color: #fff;
+ text-align: center;
+}
+
+.ft_top {
+	margin-bottom: 1.5em;
+}
+
+.ft_divider {
+	margin: auto;
+}
+
+.ft_bottom {
+	margin-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.ff_links {
+	font-style: italic;
+}
+
+.link_w {
+	color: #fff;
+}
+
+.link_w:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.link_b {
+	color: #3C3C3C;
+}
+
+a.link_b:hover {
+	text-decoration: none;
+	color: #5796E1;
+}
+
+.copyright > p {
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
+}
+
+/* Blog Index */
+
+.recent_post {
+	margin-top: 2.5em;
+}
+
+.rm, .btn_sng {
+	background-color: #5796E1;
+	color: #fff;
+	padding: 0.4em;
+	margin: 0 auto;
+  display: block;
+}
+
+.post_box {
+	text-align: center;
+}
+
+.post_box > h5 {
+	text-transform: lowercase;
+}
+
+/* Single Blog Page */
+
+.gen_header {
+	text-align: center;
+	background-color: #5796E1;
+	color: #fff;
+	padding: 1.5em 0;
+}
+
+hr {
+	margin: auto;
+}
+
+.nav_title {
+	font-size: 1.5em;
+	text-shadow: 3px 3px 5px #5e5e5e;
+}
+
+.nav_title:hover {
+	text-shadow: 3px 3px 5px #000;
+	display: inline-block;
+}
+
+.script {
+	font-family: "Stackyard PERSONAL USE";
+	font-size: 1.5em;
+}
+
+.nav_subtitle {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.linkback {
+	position: fixed;
+  top: 75%;
+}
+
+.btn_margin {
+	margin-top: 0.5em;
+}
+
+.post_content {
+	margin: auto;
+	margin-top: 5em;
+}
+
+.cover {
+	width: 100%; 
+	height: 25vw;
+	object-fit: cover;
+}
+
+.main_post {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.main_post > h2 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 2.3em;
+}
+
+.divider, .divider_front {
+	border-bottom: 5px solid #5796E1;
+	width: 70%;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.divider_front {
+	border-bottom: 3px solid #5796E1;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.main_post > hr {
+	color: #5796E1;
+	width: 80%;
+	height: 15px;
+}
+
+.main_post > p {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.cr_min {
+	padding: 1em 0;
+}
+
+.spacer {
+	margin-top: 2em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+	.logo {
+		margin-top: 8em;
+		text-shadow: 2px 2px 3px #2C2C2C;
+	}
+
+	.national, .association, .nashville {
+		font-weight: bold;
+	}
+
+	.script-logo {
+		font-size: 6em;
+	}
+
+	.intro, .location, .blog {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+	.member_photo {
+		width: 100%;
+		height: 150px;
+		margin-top: 2em;
+	}
+
+	.excerpt_image {
+		width: 100%;
+		height: 200px;
+	}
+
+	.btn_sng {
+		display: inline;
+	}
+
+	.linkback {
+		position: static;
+		top: auto;
+		text-align: center;
+	}
+
+	.cover {
+		width: 100%; 
+		height: 40vw;
+		object-fit: cover;
+	}
+
+	.main_post {
+		margin-top: 1em;
+	}
+
+	.main_post > h2 {
+		margin-top: 0.8em;
+	}
 }

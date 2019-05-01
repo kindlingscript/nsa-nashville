@@ -7,10 +7,9 @@
 </head>
 <body>
 	
-	<header>
-		<div class="logo">
-			<h1 class="national">National</h1> <h1 class="script-logo">Stuttering</span> <h1 class="association">Association</h1>
-			<hr>
-			<h2 class="n-chapter">Nashville Chapter</h2>
-		</div>
+	<header class="gen_header">
+		<a class="link_w" href="<?php echo home_url(); ?>">
+			<h1 class="nav_title">National <span class="script">Stuttering</span> Association</h1>
+		</a>
+			<h2 class="nav_subtitle">Nashville Chapter Blog</h2>
 	</header>
